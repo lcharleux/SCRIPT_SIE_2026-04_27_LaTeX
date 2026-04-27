@@ -1,4 +1,13 @@
 \documentclass[a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% STUFF THAT YOU PUT IN NEARLY EVERY DOCUMENT
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES THAT ARE USED FOR TUTORIAL PURPOSE
+\usepackage[math]{blindtext}
+
 
 \title{My first \LaTeX document}
 \author{Me working on \LaTeX}
@@ -6,9 +15,23 @@
 \begin{document}
 \maketitle % Actually displays the title
 
+\tableofcontents
+
+\section{Introduction to \LaTeX}
+\subsection{Basis text and paragraphs}
+
 This is a paragraph.
 Still in the same paragraph.
+\blindtext
 
 A blank line is enough to start a new paragraph.
+\blindtext
+
+\section{A few words about maths}
+\subsection{Inline maths}
+
+
+
+
 
 \end{document}
