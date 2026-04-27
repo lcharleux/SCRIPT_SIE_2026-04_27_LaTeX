@@ -5,6 +5,16 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{amsmath, amssymb}
+\numberwithin{equation}{section} % NUMBERS ACCORDING TO SECTIONS
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PACKAGES THAT ARE USED FOR TUTORIAL PURPOSE
 \usepackage[math]{blindtext}
@@ -31,8 +41,8 @@ A blank line is enough to start a new paragraph.
 \section{A few words about maths}
 \subsection{Inline maths}
 
-In \LaTeX, you can use inline maths. For example, $\alpha = 3/4$ and $\varepsilon = 2 \pi$. 
-The math fonts are adjusted so they don't distort your paragraph. 
+In \LaTeX, you can use inline maths. For example, $\alpha = 3/4$ and $\varepsilon = 2 \pi$.
+The math fonts are adjusted so they don't distort your paragraph.
 This is an expression that may be too big for inline math $u(x) = \int_0^{+\infty} v(x) dx$.
 
 \subsection{Standalone math}
@@ -40,13 +50,30 @@ This is an expression that may be too big for inline math $u(x) = \int_0^{+\inft
 You can create standalone equations as well:
 
 $$
-A = \frac{26 + \pi }{12 + \frac{13}{\Omega}}
+    A = \frac{26 + \pi }{12 + \frac{13}{\Omega}}
 $$
 
 If you don't like fractions that are shrinked, you can use "dfrac":
 
 $$
-A = \dfrac{26 + \pi }{12 + \dfrac{13}{\Omega}}
+    A = \dfrac{26 + \pi }{12 + \dfrac{13}{\Omega}}
 $$
+
+You can number equations this way:
+
+\begin{equation}
+    U = \sum_{n = 0}^N u_n
+    \label{eq:nice_equation}
+\end{equation}
+
+This is useful for citing equations like in Eq. \ref{eq:nice_equation} which is on page \pageref{eq:nice_equation}.
+And aligned equations with numbers:
+
+\begin{align}
+    A & = 13 + 10 \nonumber \\
+      & = 23
+\end{align}
+
+\subsection{Fancier stuff with maths}
 
 \end{document}
