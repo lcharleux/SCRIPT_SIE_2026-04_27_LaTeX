@@ -1,0 +1,38 @@
+\documentclass[a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% STUFF THAT YOU PUT IN NEARLY EVERY DOCUMENT
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb}
+\numberwithin{equation}{section} % NUMBERS ACCORDING TO SECTIONS
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\usepackage{graphicx} % FOR INPUTING IMAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES THAT ARE USED FOR TUTORIAL PURPOSE
+\usepackage[math]{blindtext}
+
+
+\title{My first \LaTeX document}
+\author{Me working on \LaTeX}
+
+\begin{document}
+\maketitle % Actually displays the title
+
+\tableofcontents
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio.bib}
+
+
+\end{document}
