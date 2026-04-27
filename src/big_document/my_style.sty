@@ -15,6 +15,17 @@
     pdfpagemode=FullScreen,
     }
 \usepackage{graphicx} % FOR INPUTING IMAGES
+\usepackage[Lenny]{fncychap}
+\usepackage{fancyhdr}
+\fancyhead{} % clear all header fields
+\fancyhead[RO,LE]{\textbf{The performance of new graduates}}
+\fancyhead[E]{Header: even page \thepage}
+\fancyfoot[E]{Footer: even page \thepage}
+
+% Set the header and footer for Odd
+% pages but omit the zone (L, C or R)
+\fancyhead[O]{Header: odd page \thepage}
+\fancyfoot[O]{Footer: odd page \thepage}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PACKAGES THAT ARE USED FOR TUTORIAL PURPOSE
 \usepackage[math]{blindtext}
