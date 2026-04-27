@@ -1,3 +1,3 @@
 # SCRIPT Block 1: LaTeX
 
-Fichiers de la session du 27/04/2026
+Files from the April 27 2026 session.
