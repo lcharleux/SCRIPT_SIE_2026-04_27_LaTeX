@@ -8,3 +8,15 @@ src/basics/basics.toc
 src/basics/basics.out
 src/basics/basics.bbl
 src/basics/basics.blg
+src/big_document/big_doc.aux
+src/big_document/big_doc.bbl
+src/big_document/big_doc.blg
+src/big_document/big_doc.fdb_latexmk
+src/big_document/big_doc.fls
+src/big_document/big_doc.log
+src/big_document/big_doc.out
+src/big_document/big_doc.pdf
+src/big_document/big_doc.aux
+src/big_document/big_doc.synctex.gz
+src/big_document/big_doc.toc
+src/big_document/chapter_1.aux
