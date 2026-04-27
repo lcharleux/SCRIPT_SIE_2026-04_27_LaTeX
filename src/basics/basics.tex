@@ -91,6 +91,46 @@ For example:
 \section{Figures and images}
 
 In \LaTeX, to input images, you need the "graphicx" package.
+\blindtext
+
+\begin{figure}
+    \begin{center}
+        \includegraphics[width=.8\textwidth]{figures/racoon.jpg}
+    \end{center}
+    \caption{A magnificient racoon in a park.}
+    \label{fig:racoon}
+\end{figure}
+
+The Fig. \ref{fig:racoon} is floating, it is on page \pageref{fig:racoon}.
+It will not always be at this position.
+\blindtext
+
+\section{Tabulars and tables}
+
+A good way to produce tables is to use \href{https://www.tablesgenerator.com/}{TablesGenerator}.
+The Tab. \ref{tab:nice_table} is an example.
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{lcr}
+            \hline
+            Name & Location & Team \\
+            Bob  & Germany  & Red  \\
+            \hline
+        \end{tabular}
+    \end{center}
+    \caption{A nice table with useless data.}
+    \label{tab:nice_table}
+\end{table}
+
+
+\section{Bibliography basics}
+
+You can cite articles with \cite{hawking1974black}.
+It is possible to cite multiple papers at one with \cite{hawking1974black,hawking2009brief}.
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio.bib}
 
 
 \end{document}
